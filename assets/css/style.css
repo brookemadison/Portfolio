@@ -1,0 +1,28 @@
+/* tells browser to fix box model calculations */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables*/
+:root{
+    --stone: #efece7;
+    --gold: #9c7d51;
+    --sky: #bcc9bf;
+    --sage: #89886a;
+    --pine: #122b18;
+  }
+/* Sets background color */
+body {
+    background-color: var(--stone);
+}
+/* Hero/Jumbotron */
+.hero {
+    background-image: url("../images/tree.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+/* Nav Bar styles */
