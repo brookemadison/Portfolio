@@ -17,6 +17,10 @@
 /* Sets background color */
 body {
     background-color: var(--stone);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Nav Bar styles */
@@ -96,19 +100,56 @@ a {
  }
 
  /* Body */
- h2 {
+.about-me {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content: space-around;
+  }
+  
+  .about-me:last-child {
+    border-bottom: none;
+  }
+  
+  .about-me h2 {
     color:var(--pine);
     font-family: 'La Luxes Serif';
     font-weight: bolder;
     font-style: normal;  
     src: url('LaLuxesSerif.woff2') format('woff2'),
-        url('LaLuxesSerif.woff') format('woff');
-   }
-
-p {
-    color:var(--pine);
+    url('LaLuxesSerif.woff') format('woff');
+    flex: 1 30%;
+  }
+  
+  .step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .about-me-img {
+    flex: 1 12%;
+    margin-right: 20px;
+  }
+  
+  .about-me-img img {
+    max-width: 80%;
+    border-radius: 50%
+  }
+  
+  .about-me-text {
+    flex: 12;
+  }
+  
+  .about-me-text p {
+    color: var(--pine);
+    font-size: 18px;
     font-family: Arial, sans-serif;
-}
+  }
 
  /* Footer */
 .footer a{
@@ -129,4 +170,37 @@ p {
     font-weight: lighter;
     font-size: 1.55vw;
     text-decoration: underline;
+    text-align:center;
+
+      }
+
+      .contact {
+        margin: 50px auto;
+        padding-bottom: 50px;
+        width: 80%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items:center;
+        justify-content: space-around;
+      }
+      
+      .contact:last-child {
+        border-bottom: none;
+      }
+      
+      .contact h2 {
+        color:var(--pine);
+        font-family: 'La Luxes Serif';
+        font-weight: bolder;
+        font-style: normal;  
+        src: url('LaLuxesSerif.woff2') format('woff2'),
+        url('LaLuxesSerif.woff') format('woff');
+        flex: 1 30%;
+      }
+      
+      .contact {
+        flex: 2 70%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
       }
