@@ -136,12 +136,45 @@ body {
 
 /* About Me */
 /* flex child */
+.about-me-img {
+border-radius: 50%;
+}
+
 .about-me-text p {
-  color: var(--pine);
-  font-size: 18px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 40px;
-  margin-bottom: 40px;
+color: var(--pine);
+font-size: 18px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+width:100%;
+height:100%;
+background-color: Var(--stone);
+padding: 60px;
+display: flex;
+flex-wrap: wrap;
+}
+
+#title-box {
+  float:left;
+  width:25%;
+  height:160px;
+  background-color: var(--stone);
+}
+
+#img-box {
+  float:left;
+  width:25%;
+  height:160px;
+  background-color: var(--stone); 
+  margin-left:0px;
+}
+
+#text-box {
+  float: right;
+  width: 50%;
+  height:160px;
+  background-color: var(--stone);
 }
 
  /* Work */
@@ -149,8 +182,42 @@ body {
 .work {
   width: 50%;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
+  padding: 40px 0;
 }
+
+.projects {
+  color:var(--sage);
+  font-family: 'La Luxes Serif';
+  font-weight: normal;
+  font-style: normal;  
+  src: url('LaLuxesSerif.woff2') format('woff2'),
+  url('LaLuxesSerif.woff') format('woff');
+  justify-content: space-evenly;
+}
+
+li {
+  list-style: none;
+}
+
+.work ul li a {
+  color: var(--stone);
+  font-size: 14px;
+  font-style: italic;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.work-img {
+    border: 2px solid var(--sage);
+}
+  
+.work-img:hover {
+    box-shadow: 0 0 5px 4px var(--sage);
+}
+
 
  /* Contact */
  .contact ul {
