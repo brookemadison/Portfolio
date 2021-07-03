@@ -136,45 +136,46 @@ body {
 
 /* About Me */
 /* flex child */
-.about-me-img {
-border-radius: 50%;
-}
-
-.about-me-text p {
-color: var(--pine);
-font-size: 18px;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
 .container {
 width:100%;
 height:100%;
 background-color: Var(--stone);
-padding: 60px;
+padding-top: 60px;
+padding-bottom: 30px;
 display: flex;
 flex-wrap: wrap;
 }
 
 #title-box {
   float:left;
-  width:25%;
+  width:20%;
   height:160px;
   background-color: var(--stone);
 }
 
 #img-box {
   float:left;
-  width:25%;
+  width:20%;
   height:160px;
-  background-color: var(--stone); 
-  margin-left:0px;
+  background-color: var(--stone);
 }
 
 #text-box {
   float: right;
-  width: 50%;
+  width: 60%;
   height:160px;
   background-color: var(--stone);
+  margin: 60px 0px;
+}
+
+.about-me-img {
+  border-radius: 50%;
+}
+  
+.about-me-text p {
+  color: var(--pine);
+  font-size: 18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
  /* Work */
@@ -183,7 +184,7 @@ flex-wrap: wrap;
   width: 50%;
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: row;
+  flex-direction: column;
   padding: 40px 0;
 }
 
