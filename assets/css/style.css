@@ -18,7 +18,7 @@
 .header {
     background-color: var(--sage);
     color: var(--stone);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Geneva, Verdana, sans-serif;
     padding: 1px;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@ h1 {
 
 .header nav {
     float: right;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Geneva, Verdana, sans-serif;
     font-size: 18px;
     margin-right: 20px;
     padding-top: 20px; 
@@ -65,6 +65,10 @@ a {
     color: var(--stone);
     text-decoration: none;
 }
+
+nav ul li a:hover {
+  color: var(--pine);
+  }
 
 /* Hero/Jumbotron */
 .hero {
@@ -103,15 +107,10 @@ body {
   background-color: var(--stone); 
 }
 
-.primary-border {
-  background-color: var(--stone);
-}
-
 .secondary-border {
   background-color: var(--pine);
 }
 
-/* flex parent */
 .section-title{
   color:var(--sage);
   font-family: 'La Luxes Serif';
@@ -120,7 +119,6 @@ body {
   src: url('LaLuxesSerif.woff2') format('woff2'),
   url('LaLuxesSerif.woff') format('woff');
   align-content: center;
-  width: 100%;
   margin-left: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -129,55 +127,49 @@ body {
   justify-content:flex-start;
 }
 
-.vl{
-  border-right: 4px solid var(--sage);
-  height: 70px;
-}
-
 /* About Me */
-/* flex child */
-.container {
-width:100%;
-height:100%;
-background-color: Var(--stone);
-padding-top: 60px;
-padding-bottom: 30px;
-display: flex;
-flex-wrap: wrap;
-}
-
-#title-box {
-  float:left;
-  width:20%;
-  height:160px;
-  background-color: var(--stone);
-}
-
-#img-box {
-  float:left;
-  width:20%;
-  height:160px;
-  background-color: var(--stone);
-}
-
-#text-box {
-  float: right;
-  width: 60%;
-  height:160px;
-  background-color: var(--stone);
-  margin: 60px 0px;
-}
-
-.about-me-img {
-  border-radius: 50%;
-}
+.about-container {
+  width:100%;
+  height:100%;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  }
   
-.about-me-text p {
-  color: var(--pine);
-  font-size: 18px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
+  
+  #about-title-box {
+    float:left;
+    width:15%;
+    height:160px;
+    background-color: var(--stone);
+  }
+  
+  #about-img-box {
+    float:right;
+    height:160px;
+    background-color: var(--stone);
+  }
+  
+  #about-text-box {
+    float: right;
+    width: 60%;
+    height:160px;
+    background-color: var(--stone);
+    margin: 60px 60px;
+  }
+  
+  .about-me-img {
+    border-radius: 50%;
+  }
+    
+  .about-me-text p {
+    color: var(--pine);
+    font-size: 18px;
+    font-family: Geneva, Verdana, sans-serif;
+  }
+  
  /* Work */
 /* flex child */
 .work {
@@ -206,7 +198,7 @@ li {
   color: var(--stone);
   font-size: 14px;
   font-style: italic;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Geneva, Verdana, sans-serif;
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -221,27 +213,53 @@ li {
 
 
  /* Contact */
- .contact ul {
+ .contact-container {
+  width: 100%;
+  height: 100%;
+  background-color: Var(--stone);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+  }
+  
+#contact-title-box {
+    float:left;
+    background-color: var(--stone);
+    margin-right: 40px;
+  }
+  
+#contact-text-box {
+  float: right;
+  background-color: var(--stone);
+  align-content: center;
+  align-items: center;
+  display: flex;
+  }
+  
+.contact ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content:start;
-  margin-bottom: 40px;
- } 
+  } 
 
 .contact ul li a {
   font-weight: normal;
   text-decoration: underline;
   font-size: 18px;
   color: var(--pine);
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Geneva, Verdana, sans-serif;
   margin-left: 40px;
   margin-right: 40px;
+  transition: background-color .5s;
+}
+
+.contact ul li a:hover {
+color: var(--sage);
 }
 
   /* Footer */
  .footer-background{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Geneva, Verdana, sans-serif;
     font-weight: normal;
     font-size: 14px;
     font-style: italic;  
