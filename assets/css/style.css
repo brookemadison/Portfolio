@@ -181,32 +181,37 @@ body {
 }
 
 #rig {
-  max-width:900px;
-  margin:0 auto; 
-  padding-bottom: 60px;
+  max-width: 900px;
+  margin-left: 50px;
+  margin-right: 0px;
+  padding-top: 80px; 
+  padding-bottom: 80px;
   font-size:0;
   list-style:none;
   background-color: var(--pine);
 }
 
 #rig li {
+  width: 100%;
   display: inline-block;
-  width:25%;
   vertical-align:middle;
   box-sizing:border-box;
-  margin:15px;
-  padding:0;
-  padding-top: 70px;
+  margin: 30px;
+  padding: 0px;
+  padding-top: 0px;
+  margin-left: 200px;
+  padding-left: 0px;
 }
       
 .rig-cell {
-  display:block;
+  display:inline-block;
   position: relative;
   overflow:hidden;
+  align-content: center;
 }
       
 .rig-img {
-  display:block;
+  display:inline-block;
   width: 100%;
   height: auto;
   border:none;
@@ -231,13 +236,14 @@ body {
   opacity:0;
   transition:all 0.6s;
 }
+
 #rig li:hover .rig-overlay {
   opacity:0.8;
 }
 
 .rig-text {
   display:block;
-  padding:0 30px;
+  padding:0 0px;
   box-sizing:border-box;
   position:absolute;
   left:0;
@@ -313,7 +319,7 @@ body {
   font-size: 18px;
   color: var(--pine);
   font-family: Geneva, Verdana, sans-serif;
-  margin-left: 40px;
+  margin-left: 25px;
   margin-right: 40px;
   transition: background-color .5s;
 }
