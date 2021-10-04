@@ -16,11 +16,12 @@
 
 @font-face {
   font-family: 'La Luxes Serif';
-  src: url('./fonts/LaLuxesSerif.woff2') format('woff2'),
-      url('./fonts/LaLuxesSerif.woff') format('woff');
+  src: url('LaLuxesSerif.woff2') format('woff2'),
+      url('LaLuxesSerif.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 
 /* Nav Bar styles */
 .header {
@@ -58,10 +59,7 @@ h1 {
 }
 
 .header nav ul li a {
-  margin-top: 0px;
-  margin-bottom: 0px;
   margin-right: 30px;
-  margin-left: 0px;
   font-weight: lighter;
   text-decoration: underline;
 }
@@ -195,7 +193,6 @@ body {
   width: 100%;
   display: inline-block;
   vertical-align: middle;
-  box-sizing: border-box;
   margin: 1px;
   margin-left: 300px;
 }
@@ -250,14 +247,14 @@ body {
   font-size: 18px;
   font-weight: bold;
   font-family: Geneva, Verdana, sans-serif;
-  font-weight: normal !important;
+  font-weight: normal;
   top: 40%;
   color: var(--pine);
   opacity: 0;
-  filter: alpha(opacity=0);
   transform: translateY(-20px);
   transition: all .3s;
 }
+
 #rig li:hover .rig-text {
   transform: translateY(0px);
   opacity: 0.9;
@@ -403,4 +400,4 @@ body {
       width: 100%;
   }
 
-   /* followed tutorial on http://www.menucool.com/ui/responsive-image-grid-with-hover-effect for image grid in work section */
+  
